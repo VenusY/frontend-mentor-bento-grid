@@ -62,8 +62,8 @@ export default function App() {
 
       <div className='grid__box stats-box'>
         <p className='stats-box__statistic'>
-          <div className='stats-box__value'>&gt;56%</div>
-          <div className='stats-box__context'>faster audience growth</div>
+          <span className='stats-box__value'>&gt;56%</span>
+          <span className='stats-box__context'>faster audience growth</span>
         </p>
         <img
           src={require('./assets/images/illustration-audience-growth.webp')}
