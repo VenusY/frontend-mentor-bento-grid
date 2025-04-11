@@ -1,10 +1,14 @@
+import './styles/reset.css';
+import './styles/scss/App.scss';
+
 export default function App() {
   return (
     <section className='grid'>
       <section className='grid__box main-box'>
         <h1 className='main-box__heading'>
-          Social Media 10x{' '}
-          <span className='main-box__heading--italics'>faster</span> with AI
+          Social Media{' '}
+          <span className='main-box__heading--highlighted'>10x</span>{' '}
+          <span className='main-box__heading--italic'>Faster</span> with AI
         </h1>
         <img
           src={require('./assets/images/illustration-five-stars.webp')}

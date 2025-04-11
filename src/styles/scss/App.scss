@@ -1,3 +1,5 @@
+@use './util' as u;
+
 @font-face {
   font-family: 'DM Sans';
   src: url('../../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf')
@@ -24,5 +26,54 @@
 }
 
 body {
+  padding: 32px 16px;
+  background: var(--very-light-grey);
   font-family: var(--ff-dm-sans);
+}
+
+.grid {
+  display: grid;
+  gap: 32px;
+
+  &__box {
+    border-radius: 10px;
+  }
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 40px;
+  padding-block: 40px;
+  background: var(--dark-purple);
+  text-align: center;
+
+  &__heading {
+    margin-bottom: u.rem(24);
+    font-size: u.rem(46);
+    font-weight: 500;
+    line-height: 0.9;
+    letter-spacing: u.rem(0.5);
+    color: var(--white);
+
+    &--highlighted {
+      color: var(--dark-yellow);
+    }
+
+    &--italic {
+      font-style: italic;
+    }
+  }
+
+  &__image {
+    max-width: 192px;
+    margin-bottom: u.rem(8);
+  }
+
+  &__text {
+    font-size: u.rem(18);
+    line-height: 1.1;
+    color: var(--light-purple);
+  }
 }
