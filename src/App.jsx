@@ -19,11 +19,41 @@ export default function App() {
       </section>
 
       <section className='grid__box platforms-box'>
-        <img
-          src={require('./assets/images/illustration-multiple-platforms.webp')}
-          alt='Multiple platforms'
-          className='platforms-box__image'
-        />
+        <div className='platforms-illustration'>
+          <div className='platforms-illustration__pill'>
+            <div className='platforms-illustration__icon-container'>
+              <img
+                src={require('./assets/images/instagram-icon.svg')}
+                alt='Instagram'
+                className='platforms-illustration__icon'
+              />
+            </div>
+
+            <div className='platforms-illustration__text'>
+              <p className='platforms-illustration__handle'>@YourCo</p>
+              <p className='platforms-illustration__follower-count'>
+                12K Followers
+              </p>
+            </div>
+          </div>
+
+          <div className='platforms-illustration__pill'>
+            <div className='platforms-illustration__icon-container'>
+              <img
+                src={require('./assets/images/x-icon.svg')}
+                alt='X'
+                className='platforms-illustration__icon'
+              />
+            </div>
+
+            <div className='platforms-illustration__text'>
+              <p className='platforms-illustration__handle'>@YourCo</p>
+              <p className='platforms-illustration__follower-count'>
+                8K Followers
+              </p>
+            </div>
+          </div>
+        </div>
         <h2 className='platforms-box__heading'>
           Manage multiple accounts and platforms
         </h2>
