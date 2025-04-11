@@ -55,7 +55,7 @@ export default function App() {
           </div>
         </div>
         <h2 className='platforms-box__heading'>
-          Manage multiple accounts and platforms
+          Manage multiple accounts and platforms.
         </h2>
       </section>
 
@@ -78,7 +78,7 @@ export default function App() {
           className='schedule-box__image'
         />
         <p className='schedule-box__description'>
-          Optimize post timings to publish conetnt at the perfect time for your
+          Optimize post timings to publish content at the perfect time for your
           audience.
         </p>
       </section>
