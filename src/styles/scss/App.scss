@@ -182,8 +182,31 @@ body {
   }
 
   &__description {
-    max-width: 300px;
+    padding-inline: 5px;
     font-size: u.rem(18);
     line-height: 1.1;
+  }
+}
+
+.grow-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  background: var(--dark-purple);
+
+  &__image {
+    width: 230px;
+    margin-bottom: u.rem(40);
+  }
+
+  &__heading {
+    padding-inline: 30px;
+    font-size: u.rem(30);
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: u.rem(-1);
+    line-height: 0.95;
+    color: var(--white);
   }
 }
