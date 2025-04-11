@@ -44,8 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-inline: 40px;
-  padding-block: 40px;
+  padding: 40px;
   background: var(--dark-purple);
   text-align: center;
 
@@ -75,5 +74,68 @@ body {
     font-size: u.rem(18);
     line-height: 1.1;
     color: var(--light-purple);
+  }
+}
+
+.platforms-box {
+  padding: 14px 16px 16px 16px;
+  background: var(--white);
+
+  &__heading {
+    font-size: u.rem(28);
+    font-weight: 600;
+    letter-spacing: u.rem(-2);
+    line-height: 0.9;
+    color: var(--black);
+  }
+}
+
+.platforms-illustration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 311px;
+  margin-bottom: u.rem(15);
+
+  &__pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    padding-right: 20px;
+    border-radius: 1000px;
+    box-shadow: -15px 15px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  &__icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    background: var(--dark-yellow);
+    border-radius: 50%;
+  }
+
+  &__icon {
+    width: auto;
+    height: 24px;
+  }
+
+  &__handle {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1;
+    color: var(--black);
+  }
+
+  &__follower-count {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+    color: #c8c8c8;
   }
 }
