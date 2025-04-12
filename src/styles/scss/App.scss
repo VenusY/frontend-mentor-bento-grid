@@ -35,6 +35,8 @@ body {
 .grid {
   display: grid;
   gap: 32px;
+  max-width: 500px;
+  margin-inline: auto;
 
   &__box {
     border-radius: 10px;
@@ -102,8 +104,10 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-shrink: 0;
     padding: 12px;
     padding-right: 20px;
+    background: var(--white);
     border-radius: 1000px;
     box-shadow: -10px 15px 20px rgba(0, 0, 0, 0.05);
   }
@@ -280,5 +284,181 @@ body {
 
   &__image {
     max-width: 220px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 83px 0;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 256px);
+    grid-template-rows: 324px 59px 156px 246px;
+    max-width: unset;
+    margin-inline: unset;
+  }
+
+  .main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: 1 / 2 / 2 / 4;
+
+    &__heading {
+      margin-bottom: 24px;
+      font-size: 62px;
+      letter-spacing: 0;
+      line-height: 0.95;
+    }
+
+    &__image {
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
+
+  .platforms-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: 2 / 2 / 4 / 3;
+    overflow: hidden;
+    padding: 22px 24px;
+
+    &__heading {
+      font-size: 32px;
+      letter-spacing: -1px;
+    }
+  }
+
+  .platforms-illustration {
+    gap: 14px;
+    margin-bottom: 0;
+  }
+
+  .maintain-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: 2 / 3 / 4 / 4;
+    padding-block: 25px 0;
+    padding-inline: 24px;
+
+    &__heading {
+      margin-bottom: auto;
+      font-size: 32px;
+      letter-spacing: -2px;
+    }
+
+    &__image {
+      aspect-ratio: 208 / 95;
+      max-width: unset;
+    }
+  }
+
+  .schedule-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: 1 / 4 / 4 / 5;
+    padding: 32px;
+    padding-right: 0;
+    text-align: start;
+
+    &__heading {
+      padding-right: 32px;
+      margin-bottom: 22px;
+      font-size: 32px;
+      letter-spacing: -2px;
+      line-height: 0.9;
+    }
+
+    &__image {
+      width: 224px;
+      height: 319px;
+      object-fit: cover;
+      object-position: left;
+      margin-bottom: 25px;
+    }
+
+    &__description {
+      padding-inline: unset;
+      padding-right: 32px;
+      font-size: 18px;
+    }
+  }
+
+  .grow-box {
+    flex-direction: row;
+    gap: 12px;
+    grid-area: 4 / 3 / 5 / 5;
+    padding: 23px 24px;
+
+    &__image {
+      width: unset;
+      height: 100%;
+      margin-bottom: 0;
+    }
+
+    &__heading {
+      padding-inline: 0;
+      font-size: 40px;
+      text-align: start;
+      letter-spacing: 0;
+    }
+  }
+
+  .stats-box {
+    display: flex;
+    flex-direction: column;
+    grid-area: 4 / 2 / 5 / 3;
+
+    &__statistic {
+      margin-bottom: auto;
+    }
+
+    &__value {
+      margin-bottom: 12px;
+      font-size: 62px;
+    }
+
+    &__context {
+      font-size: 18px;
+    }
+  }
+
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: 1 / 1 / 3 / 2;
+
+    &__heading {
+      margin-bottom: 24px;
+      font-size: 40px;
+      letter-spacing: -2px;
+    }
+  }
+
+  .ai-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-area: 3 / 1 / 5 / 2;
+    padding-right: 12px;
+
+    &__heading {
+      padding-right: 40px;
+      margin-bottom: unset;
+      font-size: 40px;
+      letter-spacing: -2px;
+    }
   }
 }
