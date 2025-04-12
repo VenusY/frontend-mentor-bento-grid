@@ -203,11 +203,11 @@ body {
 
   &__heading {
     padding-inline: 30px;
-    font-size: u.rem(30);
+    font-size: u.rem(32);
     font-weight: 500;
     text-align: center;
     letter-spacing: u.rem(-1);
-    line-height: 0.95;
+    line-height: 0.9;
     color: var(--white);
   }
 }
@@ -239,5 +239,28 @@ body {
 
   &__image {
     max-width: 180px;
+  }
+}
+
+.content-box {
+  padding: 32px;
+  background: var(--cream);
+
+  &__heading {
+    margin-bottom: u.rem(24);
+    font-size: u.rem(32);
+    font-weight: 500;
+    letter-spacing: u.rem(-1);
+    line-height: 0.9;
+    color: var(--black);
+
+    &--highlighted {
+      font-style: italic;
+      color: var(--dark-purple);
+    }
+  }
+
+  &__image {
+    max-width: 190px;
   }
 }
