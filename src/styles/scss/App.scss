@@ -264,3 +264,21 @@ body {
     max-width: 190px;
   }
 }
+
+.ai-box {
+  padding: 24px;
+  background: var(--dark-yellow);
+
+  &__heading {
+    margin-bottom: u.rem(22);
+    font-size: u.rem(32);
+    font-weight: 500;
+    letter-spacing: u.rem(-1);
+    line-height: 0.9;
+    color: var(--black);
+  }
+
+  &__image {
+    max-width: 220px;
+  }
+}
